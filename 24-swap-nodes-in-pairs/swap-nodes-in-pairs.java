@@ -23,5 +23,5 @@ class Solution {
         //temp=temp.next.next;
         return head;
     }
-   // return head;
+   
 }
