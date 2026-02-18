@@ -6,6 +6,7 @@ class Solution:
         sum = 0
         for i in nums:
             sum += i
+            
         k = total - sum
         return int(k)
 
