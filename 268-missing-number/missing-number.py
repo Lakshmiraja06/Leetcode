@@ -5,8 +5,9 @@ class Solution:
         total = n*(n+1)/2
         sum = 0
         for i in nums:
-                sum += i
-                k = total - sum
+            sum += i
+            
+        k = total - sum
         return int(k)
 
             
