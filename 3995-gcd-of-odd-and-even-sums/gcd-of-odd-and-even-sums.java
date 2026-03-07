@@ -1,14 +1,18 @@
 class Solution {
     public int gcdOfOddEvenSums(int n) {
-        int count = 0;
-        //int oddcount = 0;
-        for(int i=0;i<n;i++){
+        int esum = 0;
+        int osum = 0;
+        for(int i=1;i<=n;i++){
             if(i%2==0){
-                count+=1;
+                esum += 2*i;
+                osum += (2*i)-1;
             }else{
-                count+=1;
+                esum += 2*i;
+                osum += (2*i)-1;
             }
         }
-        return count;
+        int res = esum - osum;
+        return res;
     }
 }
+        
