@@ -4,6 +4,7 @@ class Solution {
         int temp = n;
         while(temp % 3 == 0){
             temp /= 3;
+            n = temp;
         }
         return temp == 1;
     }
