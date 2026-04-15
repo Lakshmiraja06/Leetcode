@@ -11,7 +11,7 @@ class Solution {
                 arr[k++] = nums2[j++];
             }
            
-        }
+        } 
         while(i < m){
             arr[k++] = nums1[i++];
         }
