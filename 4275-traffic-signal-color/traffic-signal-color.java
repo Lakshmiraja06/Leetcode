@@ -7,9 +7,9 @@ class Solution {
             return "Orange";
         }else if(30 < timer && timer<=90){
             return "Red";
-        }else  return "Invalid";
+        }//else  return "Invalid";
         
 
-        //return "Invalid";    
+        return "Invalid";    
     }
 }
