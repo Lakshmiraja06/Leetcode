@@ -4,8 +4,8 @@ class Solution {
         int[] arr = new int[nums.length];
         int j=0;
         for(int i=nums.length-1;i>=0;i--){
-            arr[j]=nums[i];
-            j++;
+            arr[j++]=nums[i];
+            
         }
         int n1 = arr.length;
         int[] result = new int[n+n1];
