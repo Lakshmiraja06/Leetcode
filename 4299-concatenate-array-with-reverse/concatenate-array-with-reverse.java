@@ -7,13 +7,12 @@ class Solution {
             arr[j++]=nums[i];
             
         }
-        int n1 = arr.length;
-        int[] result = new int[n+n1];
+        int[] result = new int[n+n];
         for(int i=0;i<nums.length;i++){
             result[i] = nums[i];
         }
         for(int i=0;i<arr.length;i++){
-            result[n1+i] = arr[i];
+            result[n+i] = arr[i];
         }
        return result; 
     }
