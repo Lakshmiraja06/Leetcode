@@ -4,8 +4,8 @@ class Solution {
         int[] arr = new int[n];
         long rem = 0;
         for(int i=0;i<n;i++){
-            rem  = rem*10+(word.charAt(i) -'0');
-            rem %= m;
+            int dig = word.charAt(i) -'0';
+            rem  = (rem*10+dig) % m;
             if(rem==0) arr[i]=1;
             else arr[i]=0;
         }
