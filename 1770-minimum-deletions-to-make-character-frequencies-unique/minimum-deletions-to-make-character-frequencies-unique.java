@@ -7,13 +7,12 @@ class Solution {
         HashSet<Integer> st = new HashSet<>();
 
         int del=0;
-        for(int value:freq){
-                while(value!= 0 && st.contains(value)){
-                    value--;
-                    // st.add(temp);
+        for(int i=0;i<freq.length;i++){
+                while(freq[i]!= 0 && st.contains(freq[i])){
+                    freq[i]--;
                     del++;
                  }
-                st.add(value);
+                st.add(freq[i]);
         }
         
         return del;
