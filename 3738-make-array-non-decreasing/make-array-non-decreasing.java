@@ -7,7 +7,6 @@ class Solution {
                 prev=nums[i];
                 count++;
             }
-            else continue;
         }
         return count;
     }
