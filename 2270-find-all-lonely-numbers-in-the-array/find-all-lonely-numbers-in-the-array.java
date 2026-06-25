@@ -2,14 +2,14 @@ class Solution {
     public List<Integer> findLonely(int[] nums) {
         List<Integer> list = new ArrayList<>();
         Arrays.sort(nums);
-        if(nums.length==1){
+         if(nums.length==1){
             list.add(nums[0]);
             return list;
         }
         int n = nums.length-1;
         for(int i=0;i<nums.length;i++){
-            //if(nums.length>1 && nums[0]!=0){
-                if(i==0){
+            
+            if(i==0){
                 if(nums[i]==nums[i+1] || nums[i]+1==nums[i+1]) continue;
                 else list.add(nums[i]);
             }
@@ -21,6 +21,7 @@ class Solution {
                 if(nums[i]==nums[i-1] || nums[i]==nums[i+1] || nums[i]-1==nums[i-1] || nums[i]+1==nums[i+1]) continue;
                 else list.add(nums[i]);
             }
+        
             
         }
         return list;
