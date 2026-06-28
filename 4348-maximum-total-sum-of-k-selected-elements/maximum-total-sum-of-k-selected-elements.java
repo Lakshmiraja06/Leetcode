@@ -6,7 +6,9 @@ class Solution {
         long max = Long.MIN_VALUE;
         int j=n-1;
         for(int i=0;i<k;i++){
-            max = Math.max(nums[j], 1L*nums[j]*mul);
+            long a= nums[j];
+            long b = 1L*nums[j]*mul;
+            max = Math.max(a,b);
             sum += max;
             j--;
             mul--;
