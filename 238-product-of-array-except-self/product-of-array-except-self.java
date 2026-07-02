@@ -5,10 +5,10 @@ class Solution {
         for(int i=1;i<nums.length;i++){
             arr[i]=arr[i-1]*nums[i-1];
         }
-        int ri = 1;
+        int r= 1;
         for(int i=nums.length-1;i>=0;i--){
-            arr[i]=arr[i]*ri;
-            ri=ri*nums[i];
+            arr[i]=arr[i]*r;
+            r=r*nums[i];
         }
         return arr;
 
@@ -23,6 +23,6 @@ class Solution {
         // }
         //    arr[i]=pro;
         // }
-        // return arr;
+        //return arr;
     }
 }
