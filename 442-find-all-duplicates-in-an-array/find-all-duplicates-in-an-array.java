@@ -4,11 +4,12 @@ class Solution {
         HashMap<Integer, Integer> map=new HashMap<>();
         for(int n : nums){
             map.put(n, map.getOrDefault(n, 0)+1);
+            if(map.get(n)==2) list.add(n);
         }
         
-        for(int k : map.keySet()){
-            if(map.get(k)==2) list.add(k);
-        }
+        // for(int k : map.keySet()){
+        //     if(map.get(k)==2) list.add(k);
+        // }
         return list;
     }
 }
