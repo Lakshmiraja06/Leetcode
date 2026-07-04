@@ -3,12 +3,11 @@ class Solution {
         Set<Integer> set = new HashSet<>();
         for(int n:nums) set.add(n);
         for(int i=0;i<nums.length;i++){
-            int temp=nums[i];
             int rev=0;
-            while(temp!=0){
-                int dig = temp%10;
+            while(nums[i]!=0){
+                int dig = nums[i]%10;
                 rev = rev*10+dig;
-                temp /= 10;
+                nums[i] /= 10;
             }
             set.add(rev);
         }
