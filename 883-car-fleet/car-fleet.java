@@ -3,7 +3,7 @@ class Solution {
         int count=0;
         double max =Integer.MIN_VALUE;
         
-        Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new LinkedHashMap<>();
         for(int i=0;i<pos.length;i++){
             map.put(pos[i], sp[i]);
         }
