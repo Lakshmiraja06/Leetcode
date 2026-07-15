@@ -8,7 +8,7 @@ class Solution {
 
                 if(res <= d){
                     ok=true;
-                    break;
+                    //break;
                 }
             }
             if(ok) count--;
