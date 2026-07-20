@@ -9,6 +9,7 @@ class Solution {
             for(int j=i+2;j<nums.length;j++){
                 d=nums[j]-nums[j-1];
                 if(d == diff){
+                    diff=d;
                     count++;
                 }else{
                     break;
